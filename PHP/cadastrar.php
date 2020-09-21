@@ -14,7 +14,7 @@ $email=mysqli_real_escape_string($con, trim($_POST["email_usu"]));
 $tel=mysqli_real_escape_string($con, trim($_POST["telefone"]));
 $cpf=mysqli_real_escape_string($con, trim($_POST["cpf_usu"]));
 $rg=mysqli_real_escape_string($con, trim($_POST["rg_usu"]));
-## verificando se  tem o nome,email
+## verificando se  tem o nome
 $sql = "select count(*) as total from usuario where usu_name = '$nome'";
 $resultado = mysqli_query($con, $sql);
 $row = mysqli_fetch_assoc($resultado);
@@ -25,6 +25,7 @@ if($row['total'] == 1){
     echo "<a href = '/../teste - PHP/cadastro.php'>cadastro </a>";
     exit();
 }
+## verificando se o email ja tem cadastrado
 $sql = "select count(*) as total from usuario where usu_email = '$email'";
 $resultado = mysqli_query($con, $sql);
 $row = mysqli_fetch_assoc($resultado);
