@@ -19,22 +19,21 @@
             <div class="content">
                     <div class="login">
                         <h1>Login</h1>
-                        <p">
+                        <p class="usuario">
                             <label for="nome_login">Usuario</label>
                             <input type="text" name="nome" id="nome" onkeyup = "recebeNome()" onblur = "validanome()" placeholder = "Digite o Usuario aqui"/>
                             <span  id="testeSpan" class="valido" style="color: red;">*Usuario precisa ter no minimo 6 caracteres*</span>
                         </p>
                         <p class="senha">
                             <label for="senha_login">Senha</label>
-                            <input type="password" name="senha_usu" id="senha" onkeyup ="recebesenha()" onblur = "validasenha()" placeholder = "Digite sua senha aqui/">
+                            <input type="password" name="senha_usu" id="senha" onkeyup ="recebesenha()" onblur = "validasenha()" placeholder = "Digite sua senha aqui">
                             <span  id="testeSpan1" class="valido" style="color: red;">*A senha tem que no minimo 6 caracteres*</span>
                         </p>
                         <input type="submit"  value="Login" onclick="sendbot1()">
-                        <form action="cadastro.php" method="get">  
-                            <p>
-                                <input type="submit" value="Cadastre-se">
-                            </p>
-                        </form>   
+                        <p class="link">  
+                            ainda nao tem conta?
+                            <a href="/../teste - PHP/cadastro.php"> Cadastre-se </a>
+                          </p> 
                     </div>
             </div>
         </form>
