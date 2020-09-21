@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste DKMA</title>
+    <script src="/../teste - PHP/JS/Valida.js"></script>
+    <link rel="stylesheet" href="/../teste - PHP/css/index.css">
+    <style>
+        .valido{
+            display: none;
+        }
+        .invalido{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+        <form name="form_user" onsubmit="return sendbot1(this)" action="/../teste - PHP/PHP/Acesso.php" method="post">
+            <div class="content">
+                    <div class="login">
+                        <h1>Login</h1>
+                        <p">
+                            <label for="nome_login">Usuario</label>
+                            <input type="text" name="nome" id="nome" onkeyup = "recebeNome()" onblur = "validanome()" placeholder = "Digite o Usuario aqui"/>
+                            <span  id="testeSpan" class="valido" style="color: red;">*Usuario precisa ter no minimo 6 caracteres*</span>
+                        </p>
+                        <p class="senha">
+                            <label for="senha_login">Senha</label>
+                            <input type="password" name="senha_usu" id="senha" onkeyup ="recebesenha()" onblur = "validasenha()" placeholder = "Digite sua senha aqui/">
+                            <span  id="testeSpan1" class="valido" style="color: red;">*A senha tem que no minimo 6 caracteres*</span>
+                        </p>
+                        <input type="submit"  value="Login" onclick="sendbot1()">
+                        <form action="cadastro.php" method="get">  
+                            <p>
+                                <input type="submit" value="Cadastre-se">
+                            </p>
+                        </form>   
+                    </div>
+            </div>
+        </form>
+                 
+</body>
+</html>
