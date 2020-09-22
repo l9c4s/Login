@@ -26,7 +26,7 @@
     exit();
    }else{
     echo "<div class = 'content'>";
-    echo "<span> Usuario ou senha invalidos ):<span>";
+    echo "<span> Usuario ou senha invalidos ):<br><span>";
     echo "<span>volte para a pagina de login ou de cadastro<span>";
     echo "<a href = '/../teste - PHP/index.html'>Login </a>";
     echo "<a href = '/../teste - PHP/cadastro.php'>cadastro </a>";
