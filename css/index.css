@@ -1,37 +1,26 @@
 body{
-    margin: 0px;
-}
-h1{
-    display: flex;
-    font-size: 40px;
-    color: #066a75;
-    padding: 0px 0px 0px 80px;
-    font-family: Arial,sans-serif;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 30px;
-
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #34495e;
 }
 .content{
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    background: #6C7A89;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.login{
-
     width: 300px;
-    height: 300px;
-    background: #fff;
-
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
 }
-.label{
-display: flex;
-
-
-
-
+.content input[type = "text"],.content input[type = "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin:20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
 }
