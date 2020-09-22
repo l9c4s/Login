@@ -44,7 +44,7 @@
                     <span  id="testeSpan" class="valido" style="color: red;">*Este campo precisa ter 6 caracteres*</span>
                 </p>
                 <p>
-                    <input type="password" name="senha_usu"  onkeyup="recebesenha()" onblur="validasenha()" placeholder="Digite aqui sua senha">
+                    <input type="password" name="senha_usu" id="senha"  onkeyup="recebesenha()" onblur="validasenha()" placeholder="Digite aqui sua senha">
                     <span  id="testeSpan1" class="valido" style="color: red;">*Este campo precisa ter 6 caracteres*</span>
                 </p>
                 <p>

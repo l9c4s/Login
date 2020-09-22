@@ -51,6 +51,7 @@ function validaspanemail(item ,spanId){
     function recebesenha(){
             //chamando funcao para habilitar/desabilitar span e recebendo valor do campo senha
         senha = document.getElementById("senha").value;
+        console.log(senha);
     }
     // funcao para validar o campo senha
     function validasenha(){
