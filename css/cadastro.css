@@ -14,3 +14,59 @@ body{
     background: #191919;
     text-align: center;
 }
+.content input[type = "text"],.content input[type = "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin:20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.content input[type = "text"]:focus,.content input[type = "password"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+.content input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin:20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.content input[type = "submit"]:hover{
+    background-color:#2ecc71;
+}
+.content span{
+    color: white;
+    font-size:18px;
+}
+.content a{
+    background: none;
+    margin: 0px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    text-decoration: none;
+ }
+ .content a:hover{
+     background-color:#2ecc71;
+ }
+ .btn{
+     display: flex;
+ }

@@ -63,8 +63,10 @@
                     <input type="text" name="rg_usu" id="rg_usu" onkeyup="receberrg()" onblur="validarg()" placeholder="Digite aqui seu RG"> 
                     <span  id="testeSpan5" class="valido" style="color: red;">*RG invalido*</span>
                 </p>
-                <input type="submit" value="enviar" onclick="sendbot()">
-                <a href = '/../teste - PHP/index.html'>Login</a>
+                <div class="btn">
+                <input type="submit" value="Enviar" onclick="sendbot()">
+                <a href = '/../teste - PHP/index.html'> Login</a>
+                </div>
             </div>
         </div>
     </form>
