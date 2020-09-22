@@ -37,7 +37,7 @@
     <form name="form_user" onsubmit="return sendbot(this)" action="PHP/cadastrar.php" method="post" >
         <div class="content">
             <div id="cadastro">
-            <span>Formulario para cadastro</span>
+            <span>Formulario para cadastro,</span>
                 <span>Preencha os campos abaixos</span>
                 <p>
                     <input  id="nome"  type="text"  maxlength="30" name="nome" onkeyup="recebeNome()" onblur="validanome()" placeholder="Digite aqui o Usuario"/>
