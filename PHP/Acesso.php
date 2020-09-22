@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Teste DKMA</title>
-    <script src="/JS/Valida.js"></script>
+    <link rel="stylesheet" href="/../teste - PHP/css/acesso.css">
 </head>
 <body>
     <?php
@@ -17,23 +17,22 @@
    $row = mysqli_num_rows($resultado);
 
    if($row == 1){
-    echo "<p> bem vindo, $nome</p>";
-    echo "<p> Voce pode voltar para a pagina de login ou cadastro</p>";
+    echo "<div class = 'content'>";
+    echo "<span> bem vindo, $nome <br></span>";
+    echo "<span> Voce pode voltar para a pagina de login ou cadastro</span>";
     echo "<a href = '/../teste - PHP/index.html'>Login </a>";
     echo "<a href = '/../teste - PHP/cadastro.php'>cadastro </a>";
+    echo "</div>";
     exit();
    }else{
-    echo "<p> Usuario ou senha invalidos ):<p>";
-    echo "<p>volte para a pagina de login ou de cadastro<p>";
+    echo "<div class = 'content'>";
+    echo "<span> Usuario ou senha invalidos ):<span>";
+    echo "<span>volte para a pagina de login ou de cadastro<span>";
     echo "<a href = '/../teste - PHP/index.html'>Login </a>";
     echo "<a href = '/../teste - PHP/cadastro.php'>cadastro </a>";
-
-
+    echo "</div>";
    }
    exit;
-
-
-
     ?>
 </body>
 </html>
